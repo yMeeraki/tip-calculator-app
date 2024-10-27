@@ -23,6 +23,20 @@ body{
     border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      width: 35rem;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .output{
+        width: 40rem;
+        padding: auto;
+    }
+  }
+
 /*Styling of Form Section*/
 .form-section{
     display: flex;
@@ -106,7 +120,7 @@ input[type="number"]:hover{
     background-color: hsl(183, 100%, 15%);
     padding: 1.5rem;
     border-radius: 8px;
-    width: 20rem;
+    width: 25rem;
 }
 
 .output-section {
