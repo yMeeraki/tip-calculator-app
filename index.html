@@ -21,16 +21,16 @@
       <form class="form-section">
         
           <label for="input-bill-amt" class="input-label">Bill</label> 
-          <input id="input-bill-amt" placeholder="0" type="number" class = "input-value"/>
+          <input id="input-bill-amt" step=".01" placeholder="0" type="number" class = "input-value"/>
           <br/>
         
-          <label for="select-tip" class="select-tip-heading">Select Tip %</label>
+          <p class="select-tip-heading">Select Tip %</p>
         <div class="select-tip">
-          <button id="tip-btn" value="5">5%</button>
-          <button id="tip-btn" value="10">10%</button>
-          <button id="tip-btn" value="15">15%</button>
-          <button id="tip-btn" value="25">25%</button>
-          <button id="tip-btn" value="50">50%</button>
+          <button class="tip-btn" value="5">5%</button>
+          <button class="tip-btn" value="10">10%</button>
+          <button class="tip-btn" value="15">15%</button>
+          <button class="tip-btn" value="25">25%</button>
+          <button class="tip-btn" value="50">50%</button>
           <input id="input-tip" type="number" class = "input-tip" placeholder="Custom"/>
         </div>
           <br />
@@ -48,7 +48,7 @@
           <p class="output-unit">/ person</p>
         </div>
         
-          <p id="value-amt" class="value-amt">$0.00</p>
+          <p id="tip-amt" class="value-amt">$0.00</p>
         
       </div>
 
@@ -58,7 +58,7 @@
           <p class="output-unit">/ person</p>
         </div>
         
-          <p id="value-amt" class="value-amt">$0.00</p>
+          <p id="total-amt" class="value-amt">$0.00</p>
         
       </div>    
  
@@ -72,5 +72,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Yukti Gupta</a>.
   </div>
+
+  <script src="index.js"></script>
 </body>
 </html>

@@ -146,7 +146,7 @@ input[type="number"]:hover{
 }
 
 .error-message{
-    color: red;
+    color: rgb(255, 101, 101);
     display: none;
 }
 
