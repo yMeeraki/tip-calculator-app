@@ -14,6 +14,9 @@ let totalAmt = document.querySelector("#total-amt")
 //Error Message
 const errorMessage = document.querySelector("#error-message")
 
+//Reset Button
+const resetBtn = document.querySelector("#reset-btn")
+
 //For Code
 let tipPercentage
 let tipAmount = 0
@@ -53,6 +56,9 @@ function startCalc(tipPercentage){
 
         document.querySelector("#input-no-of-people").style.border = "1px solid rgb(255, 101, 101)"
     }
+    else{
+        document.querySelector("#input-no-of-people").style.border = "none"
+    }
 }
 
 function calcTipAmount(tipPercentage,perPerson){
@@ -68,3 +74,16 @@ function display(tipAmount,total){
     totalAmt.textContent = `$${total.toFixed(2)}`
     
 }
+
+//------------------------------------
+
+resetBtn.addEventListener('click',function(){
+    tipAmt.textContent = '$0.00'
+    totalAmt.textContent = '$0.00'
+    billAmountInput.value = '';
+    customTipPercentageInput.value = '';
+    totalPersonsInput.value = '';
+    
+    errorMessage.style.display = 'none';
+    document.querySelector("#input-no-of-people").style.border = "none"
+})
