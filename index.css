@@ -17,9 +17,9 @@ body{
     background-color: white;
     justify-content: center;
     align-items: center;
-    max-width: 40rem;
-    gap:1rem;
-    padding: 2rem 4rem;
+    max-width: 80rem;
+    gap:2rem;
+    padding: 1.5rem;
     border-radius: 8px;
 }
 
@@ -27,7 +27,7 @@ body{
 .form-section{
     display: flex;
     flex-direction: column;
-    flex-direction: column;
+    
     justify-content: center;
     gap:.5rem;
 }
@@ -36,13 +36,13 @@ body{
 .select-tip{
     display: flex;
     flex-wrap: wrap;
-    width: 25rem;
+    width: 30rem;
     gap:1rem;
 }
 
 .select-tip button, .input-tip{
-    width: 6rem;
-    padding: .5rem;
+    width: 9rem;
+    padding: 1rem;
     text-align: center;
     cursor: pointer;
 }
@@ -50,6 +50,7 @@ body{
 .select-tip button{
     background-color: hsl(183, 100%, 15%);
     color: white;
+    border-radius: 8px;
     border: none;
 }
 
@@ -66,7 +67,7 @@ body{
     font-size: 24px;
     
     padding: 10px;
-    max-width: 20rem;
+    max-width: 30rem;
     cursor: pointer;
 }
 
@@ -77,6 +78,7 @@ input[type="number"]{
     color: hsl(183, 100%, 15%);
     font-family: "Space Mono", monospace;
     text-align: right;
+    border-radius: 8px;
 }
 
 input[type="number"]:hover{
@@ -93,6 +95,59 @@ input[type="number"]:hover{
     background-image: url("./images/icon-person.svg");
     background-repeat: no-repeat;
     background-position: 10px 12px;
+}
+
+
+/*Styling of Output section*/
+.output{
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    background-color: hsl(183, 100%, 15%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 20rem;
+}
+
+.output-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.value-amt{
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.output-heading{
+    color: white;
+}
+
+/*Reset button styling*/
+.reset-btn{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* For Error message (No. of People)*/
+.for-error{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+.error-message{
+    color: red;
+    display: none;
 }
 
 /**/

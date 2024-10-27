@@ -35,34 +35,35 @@
         </div>
           <br />
         
-          <label for="input-no-of-people" class="input-label">Number of People</label> 
+          <div class="for-error">
+            <label for="input-no-of-people" class="input-label">Number of People</label> <p class="error-message" id="error-message">Can't be zero</p></div>
           <input id="input-no-of-people" placeholder="0"  type="number" class = "input-value"/>
           
       </form>
     
     <div class="output">
-      <div class="output-subsection">
+      <div class="output-section">
         <div>
           <p class="output-heading">Tip Amount</p>
           <p class="output-unit">/ person</p>
         </div>
-        <div>
-          <p id="value-amt">$0.00</p>
-        </div>
+        
+          <p id="value-amt" class="value-amt">$0.00</p>
+        
       </div>
 
-      <div class="output-subsection">
+      <div class="output-section">
         <div>
           <p class="output-heading">Total</p>
           <p class="output-unit">/ person</p>
         </div>
-        <div>
-          <p id="value-amt">$0.00</p>
-        </div>
+        
+          <p id="value-amt" class="value-amt">$0.00</p>
+        
       </div>    
  
     
-      <button>Reset</button>
+      <button class="reset-btn" id="reset-btn">Reset</button>
     </div>
 
   </main>
