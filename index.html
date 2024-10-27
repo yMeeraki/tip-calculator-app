@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,35 +15,52 @@
   </style>
 </head>
 <body>
-
-  <main>
-    <div>
-      <form>
-        <div class="form-input">
-          <label for="input-bill" class="input-label">Bill</label> 
-          <input id="input-bill" class = "input-value"/>
-        </div>
-        <div>
-          <label for="select-tip">Select Tip %</label>
+  <img src="./images/logo.svg" alt="logo-tip-calculator">
+  <main class="card">
+    
+      <form class="form-section">
+        
+          <label for="input-bill-amt" class="input-label">Bill</label> 
+          <input id="input-bill-amt" placeholder="0" type="number" class = "input-value"/>
+          <br/>
+        
+          <label for="select-tip" class="select-tip-heading">Select Tip %</label>
+        <div class="select-tip">
           <button id="tip-btn" value="5">5%</button>
           <button id="tip-btn" value="10">10%</button>
           <button id="tip-btn" value="15">15%</button>
           <button id="tip-btn" value="25">25%</button>
           <button id="tip-btn" value="50">50%</button>
-          <input id="input-bill" class = "input-value" placeholder="Custom"/>
+          <input id="input-tip" type="number" class = "input-tip" placeholder="Custom"/>
         </div>
-        <div class="form-input">
-          <label for="input-bill" class="input-label">Number of People</label> 
-          <input id="input-bill" class = "input-value"/>
-        </div>  
+          <br />
+        
+          <label for="input-no-of-people" class="input-label">Number of People</label> 
+          <input id="input-no-of-people" placeholder="0"  type="number" class = "input-value"/>
+          
       </form>
-    </div>
-    <div>
-      Tip Amount
-      / person
     
-      Total
-      / person
+    <div class="output">
+      <div class="output-subsection">
+        <div>
+          <p class="output-heading">Tip Amount</p>
+          <p class="output-unit">/ person</p>
+        </div>
+        <div>
+          <p id="value-amt">$0.00</p>
+        </div>
+      </div>
+
+      <div class="output-subsection">
+        <div>
+          <p class="output-heading">Total</p>
+          <p class="output-unit">/ person</p>
+        </div>
+        <div>
+          <p id="value-amt">$0.00</p>
+        </div>
+      </div>    
+ 
     
       <button>Reset</button>
     </div>
